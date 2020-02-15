@@ -19,7 +19,7 @@
                     <ul class="list-unstyled">
                         <li><a href="https://www.linkedin.com/in/milutin-velisic-25203a135/">Author</a></li>
                         <li><a href="Documentation.pdf">Documentation</a></li>
-                        <li><a href="Documentation.pdf">GitHub Code</a></li>
+                        <li><a href="https://github.com/milutinvelisic/online-shop">GitHub Code</a></li>
                     </ul>
                 </div>
             </div>
