@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="491e9b79-d245-4310-9d20-f1148060f9a4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WzmVd2AwBsVjZWlfz31NiNYK5U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/config" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\online-shop\public" />
+      <recent name="C:\xampp\htdocs\online-shop\app\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\online-shop\app\config" />
+      <recent name="C:\xampp\htdocs\online-shop\app\controllers" />
+      <recent name="C:\xampp\htdocs\online-shop\app\models" />
+      <recent name="C:\xampp\htdocs\online-shop\app\views" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="491e9b79-d245-4310-9d20-f1148060f9a4" name="Default Changelist" comment="" />
+      <created>1580160821939</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580160821939</updated>
+      <workItem from="1580160826961" duration="1007000" />
+      <workItem from="1580161868815" duration="1343000" />
+      <workItem from="1580213348951" duration="20075000" />
+      <workItem from="1580287623688" duration="1412000" />
+      <workItem from="1580405138832" duration="12999000" />
+      <workItem from="1580460164089" duration="3244000" />
+      <workItem from="1580475469534" duration="156000" />
+      <workItem from="1580497976751" duration="5912000" />
+      <workItem from="1580563453069" duration="31053000" />
+      <workItem from="1580652302776" duration="28115000" />
+      <workItem from="1580752041923" duration="535000" />
+      <workItem from="1580766608994" duration="3914000" />
+      <workItem from="1580826459720" duration="2131000" />
+      <workItem from="1580844762308" duration="3811000" />
+      <workItem from="1580850224226" duration="516000" />
+      <workItem from="1580916350125" duration="3635000" />
+      <workItem from="1581007860605" duration="684000" />
+      <workItem from="1581099537019" duration="4569000" />
+      <workItem from="1581167612521" duration="15122000" />
+      <workItem from="1581357470666" duration="9123000" />
+      <workItem from="1581425893473" duration="25200000" />
+      <workItem from="1581526243643" duration="1763000" />
+      <workItem from="1581624888762" duration="1645000" />
+      <workItem from="1581626562965" duration="2375000" />
+      <workItem from="1581691453333" duration="3261000" />
+      <workItem from="1581703282487" duration="11353000" />
+      <workItem from="1581723233534" duration="807000" />
+      <workItem from="1581769712348" duration="146000" />
+      <workItem from="1581776243611" duration="7803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="109" key="#Inspections" timestamp="1580768996447">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="109" key="#Inspections/0.0.1600.900@0.0.1600.900" timestamp="1580768996447" />
+    <state x="392" y="109" key="#Notifications" timestamp="1580828572740">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="109" key="#Notifications/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1580828572740" />
+    <state x="392" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580660340285">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1580660340285" />
+    <state x="480" y="178" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581626532879">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="480" y="178" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1581626532879" />
+    <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580571034570">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1580571034570" />
+    <state x="530" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581710983654">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="530" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1581710983654" />
+    <state x="598" y="249" key="NewPhpClassDialog" timestamp="1581776918885">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="598" y="249" key="NewPhpClassDialog/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1581776918885" />
+    <state x="606" y="356" key="NewPhpFileDialog" timestamp="1580921309597">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="517" y="304" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1580461767740" />
+    <state x="606" y="356" key="NewPhpFileDialog/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1580921309597" />
+    <state x="519" y="61" key="SettingsEditor" timestamp="1581357614029">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="519" y="61" key="SettingsEditor/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1581357614029" />
+    <state x="519" y="61" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1580163251941" />
+    <state x="397" y="202" key="run.anything.popup" timestamp="1581712420898">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1580465943818" />
+    <state x="397" y="202" key="run.anything.popup/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1581712420898" />
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1581169023505">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900/1600.0.1366.768@0.0.1600.900" timestamp="1581169023505" />
+  </component>
+</project>
