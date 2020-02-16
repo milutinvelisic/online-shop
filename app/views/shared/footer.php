@@ -62,31 +62,33 @@
 <!--::footer_part end::-->
 
 <!-- jquery plugins here-->
+
 <script src="public/js/jquery-1.12.1.min.js"></script>
-<!-- popper js -->
-<script src="public/js/popper.min.js"></script>
-<!-- bootstrap js -->
 <script src="public/js/bootstrap.min.js"></script>
+<!-- popper js -->
+<!--<script src="public/js/popper.min.js"></script>-->
+<!-- bootstrap js -->
+
 <!-- easing js -->
-<script src="public/js/jquery.magnific-popup.js"></script>
+<!--<script src="public/js/jquery.magnific-popup.js"></script>-->
 <!-- swiper js -->
-<script src="public/js/swiper.min.js"></script>
+<!--<script src="public/js/swiper.min.js"></script>-->
 <!-- swiper js -->
-<script src="public/js/mixitup.min.js"></script>
+<!--<script src="public/js/mixitup.min.js"></script>-->
 <!-- particles js -->
-<script src="public/js/owl.carousel.min.js"></script>
-<script src="public/js/jquery.nice-select.min.js"></script>
+<!--<script src="public/js/owl.carousel.min.js"></script>-->
+<!--<script src="public/js/jquery.nice-select.min.js"></script>-->
 <!-- slick js -->
 <script src="public/js/slick.min.js"></script>
-<script src="public/js/jquery.counterup.min.js"></script>
-<script src="public/js/waypoints.min.js"></script>
-<script src="public/js/contact.js"></script>
-<script src="public/js/jquery.ajaxchimp.min.js"></script>
-<script src="public/js/jquery.form.js"></script>
-<script src="public/js/jquery.validate.min.js"></script>
-<script src="public/js/mail-script.js"></script>
+<!--<script src="public/js/jquery.counterup.min.js"></script>-->
+<!--<script src="public/js/waypoints.min.js"></script>-->
+<!--<script src="public/js/contact.js"></script>-->
+<!--<script src="public/js/jquery.ajaxchimp.min.js"></script>-->
+<!--<script src="public/js/jquery.form.js"></script>-->
+<!--<script src="public/js/jquery.validate.min.js"></script>-->
+<!--<script src="public/js/mail-script.js"></script>-->
 <!-- custom js -->
-<script src="public/js/custom.js"></script>
+<!--<script src="public/js/custom.js"></script>-->
 
 <script src="public/node_modules/toastr/toastr.js"></script>
 <script src="public/js/main.js"></script>
@@ -386,7 +388,7 @@
 
         let products = productsInCart();
 
-        if(products) {
+        if(products != null) {
             if(productIsAlreadyInCart()) {
                 updateQuantity();
             } else {
@@ -400,16 +402,18 @@
 
         toastr.success("Product Added To Cart!");
 
-        function productsInCart() {
-            return JSON.parse(localStorage.getItem("product"));
-        }
+        // function productsInCart() {
+        //     return JSON.parse(localStorage.getItem("product"));
+        // }
         function productIsAlreadyInCart() {
             return products.filter(p => p.id == productId).length;
         }
 
         function updateQuantity() {
             let products = productsInCart();
-            for(let i in products)
+            if(products != null){
+                
+                for(let i in products)
             {
                 if(products[i].id == productId) {
                     products[i].quantity+=parseInt(quantity);
@@ -419,16 +423,22 @@
             }
 
             localStorage.setItem("product", JSON.stringify(products));
+            }
+            
         }
 
         function addToLocalStorage() {
             let products = productsInCart();
-            products.push({
+            
+            if(products != null){
+                products.push({
                 id : productId,
                 quantity : parseInt(quantity),
                 price : parseInt(priceSplited[1])
             });
             localStorage.setItem("product", JSON.stringify(products));
+            }
+            
         }
 
         function addFirstItemToLocalStorage() {
@@ -451,22 +461,27 @@
     function cartTotal(){
         let products = productsInCart();
         let x = 0;
-        for(let p of products){
+        if(products != null){
+             for(let p of products){
             x += parseInt(p.price);
+            }
+            if(document.getElementById("total")){
+                document.getElementById("total").innerHTML = "$" + x + ".00";
+            }
         }
-        if(document.getElementById("total")){
-            document.getElementById("total").innerHTML = "$" + x + ".00";
-        }
+       
 
     }
 
-
-    if(!products.length){
+    if(products != null){
+       if(!products.length){
         // showEmptyCart();
+        }
+        else{
+            displayCartData();
+        } 
     }
-    else{
-        displayCartData();
-    }
+    
 
 
 
@@ -480,14 +495,17 @@
             success : function(data) {
                 // console.table(data)
                 let converted = data;
-                for(let c of converted){
-                    for(let prod of products){
-                        if(c.idProduct == prod.id){
-                            prod.name = c.productName;
-                            prod.img = c.imageLarge;
+                if(products != null){
+                    for(let c of converted){
+                        for(let prod of products){
+                            if(c.idProduct == prod.id){
+                                prod.name = c.productName;
+                                prod.img = c.imageLarge;
+                            }
                         }
                     }
                 }
+                
                 generateTable(products);
                 generateOrderList(products)
                 $(".ti-close").click(deleteFromCart);
