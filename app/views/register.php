@@ -36,7 +36,7 @@
                         }
 
                         ?>
-                        <form class="row contact_form mt-2" action="index.php?page=doregister" method="post" novalidate="novalidate">
+                        <form class="row contact_form mt-2" action="index.php?page=doregister" method="post" onsubmit="return checkRegister();">
                             <div class="col-md-12 form-group p_star">
                                 <input type="text" class="form-control" id="username" name="username" value="" placeholder="Username">
                             </div>
@@ -73,34 +73,5 @@
 <!--================login_part end =================-->
 
 <!-- subscribe_area part start-->
-<section class="instagram_photo">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="instagram_photo_iner">
-                    <div class="single_instgram_photo">
-                        <img src="img/instagram/inst_1.png" alt="">
-                        <a href="#"><i class="ti-instagram"></i></a>
-                    </div>
-                    <div class="single_instgram_photo">
-                        <img src="img/instagram/inst_2.png" alt="">
-                        <a href="#"><i class="ti-instagram"></i></a>
-                    </div>
-                    <div class="single_instgram_photo">
-                        <img src="img/instagram/inst_3.png" alt="">
-                        <a href="#"><i class="ti-instagram"></i></a>
-                    </div>
-                    <div class="single_instgram_photo">
-                        <img src="img/instagram/inst_4.png" alt="">
-                        <a href="#"><i class="ti-instagram"></i></a>
-                    </div>
-                    <div class="single_instgram_photo">
-                        <img src="img/instagram/inst_5.png" alt="">
-                        <a href="#"><i class="ti-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <!--::subscribe_area part end::-->
