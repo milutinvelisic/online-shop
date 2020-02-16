@@ -94,11 +94,10 @@
 <script src="public/js/main.js"></script>
 <script type="text/javascript">
 
-    if (document.getElementById('btnLogin')) {
-        document.getElementById('btnLogin').addEventListener("click", checkLogin);
-    }
-    function checkLogin(e){
-        e.preventDefault()
+    // if (document.getElementById('btnLogin')) {
+    //     document.getElementById('btnLogin').addEventListener("click", checkLogin);
+    // }
+    function checkLogin(){
 
         let username = document.getElementById('username').value;
         let password =  document.getElementById('password').value;
@@ -117,15 +116,13 @@
             greske.push("Password is bad")
         }
 
-        e.returnValue = true;
     }
 
-    if (document.getElementById('btnRegister')) {
-        document.getElementById('btnRegister').addEventListener("click", checkRegister);
-    }
-    
-    function checkRegister(e) {
-        e.preventDefault();
+    // if (document.getElementById('btnRegister')) {
+    //     document.getElementById('btnRegister').addEventListener("click", checkRegister);
+    // }
+
+    function checkRegister() {
 
         let username = document.getElementById('username').value;
         let password = document.getElementById('password').value;
@@ -183,7 +180,6 @@
             return false;
         }
 
-        e.returnValue = true;
     }
 
     if($(".brands")){
@@ -204,11 +200,11 @@
         let list = document.getElementsByClassName("gender");
         localStorage.removeItem("genderValue");
         for(let i=0; i<list.length; i++) {
-          if(list[i].checked){
-              gender.push(list[i].value);
+            if(list[i].checked){
+                gender.push(list[i].value);
 
-              localStorage.setItem("genderValue", gender);
-          }
+                localStorage.setItem("genderValue", gender);
+            }
         }
 
         dataHandler()
@@ -247,7 +243,7 @@
 
         dataHandler()
     }
-    
+
     function dataHandler() {
 
         let params = {}
@@ -412,33 +408,33 @@
         function updateQuantity() {
             let products = productsInCart();
             if(products != null){
-                
+
                 for(let i in products)
-            {
-                if(products[i].id == productId) {
-                    products[i].quantity+=parseInt(quantity);
-                    products[i].price+=parseInt(priceSplited[1]);
-                    break;
+                {
+                    if(products[i].id == productId) {
+                        products[i].quantity+=parseInt(quantity);
+                        products[i].price+=parseInt(priceSplited[1]);
+                        break;
+                    }
                 }
+
+                localStorage.setItem("product", JSON.stringify(products));
             }
 
-            localStorage.setItem("product", JSON.stringify(products));
-            }
-            
         }
 
         function addToLocalStorage() {
             let products = productsInCart();
-            
+
             if(products != null){
                 products.push({
-                id : productId,
-                quantity : parseInt(quantity),
-                price : parseInt(priceSplited[1])
-            });
-            localStorage.setItem("product", JSON.stringify(products));
+                    id : productId,
+                    quantity : parseInt(quantity),
+                    price : parseInt(priceSplited[1])
+                });
+                localStorage.setItem("product", JSON.stringify(products));
             }
-            
+
         }
 
         function addFirstItemToLocalStorage() {
@@ -462,26 +458,26 @@
         let products = productsInCart();
         let x = 0;
         if(products != null){
-             for(let p of products){
-            x += parseInt(p.price);
+            for(let p of products){
+                x += parseInt(p.price);
             }
             if(document.getElementById("total")){
                 document.getElementById("total").innerHTML = "$" + x + ".00";
             }
         }
-       
+
 
     }
 
     if(products != null){
-       if(!products.length){
-        // showEmptyCart();
+        if(!products.length){
+            // showEmptyCart();
         }
         else{
             displayCartData();
-        } 
+        }
     }
-    
+
 
 
 
@@ -505,7 +501,7 @@
                         }
                     }
                 }
-                
+
                 generateTable(products);
                 generateOrderList(products)
                 $(".ti-close").click(deleteFromCart);
@@ -518,11 +514,11 @@
                     if(document.getElementById("total")){
                         var xx = document.getElementById("total").textContent.split("$")
                     }
-                   if(xx){
-                       if(parseInt(xx[1].split(".")[0]) != 0){
-                           document.getElementById("checkout").style.display = "block";
-                       }
-                   }
+                    if(xx){
+                        if(parseInt(xx[1].split(".")[0]) != 0){
+                            document.getElementById("checkout").style.display = "block";
+                        }
+                    }
                     displayCartData();
 
                 }
